@@ -1,0 +1,137 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2%;
+}
+
+.resumeDiv {
+  width: 70%;
+  border: 2px solid black;
+  border-radius: 0.5%;
+}
+
+header {
+  width: 100%;
+  height: 160px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 50px;
+  background: whitesmoke;
+}
+
+header img {
+  width: 150px;
+  height: 150px;
+  border-radius: 10%;
+  border: 1px;
+}
+
+.content {
+  width: 100%;
+  margin-bottom: 30px;
+  display: flex;
+  background: rgba(62, 144, 190, 0.5);
+}
+
+.content aside {
+  width: 30%;
+  padding-left: 50px;
+  padding-bottom: 40px;
+}
+
+.contact,
+.education {
+  margin-bottom: 20px;
+}
+
+.contact h2,
+.education h2,
+.skill h2,
+.experience h2,
+.reference h2,
+.objective h2 {
+  border-bottom: 1px solid black;
+  margin-bottom: 35px;
+  padding-bottom: 3px;
+}
+
+.skill ul {
+  margin-left: 18px;
+}
+
+.main-content {
+  padding-left: 50px;
+  width: 70%;
+  background: whitesmoke;
+}
+
+.experience-items {
+  margin-bottom: 5px;
+}
+
+.experience-items ul {
+  margin-left: 18px;
+}
+
+.experience {
+  margin-bottom: 30px;
+}
+
+.btnDiv {
+  width: 70%;
+  padding: 2%;
+  display: flex;
+  margin-top: 30px;
+  justify-content: space-evenly;
+  align-items: center;
+  background: white;
+}
+
+.btn {
+  font-size: 18px;
+  font-weight: 600;
+  padding: 10px 14px;
+  border-radius: 8px;
+  background: rgba(62, 144, 190, 0.5);
+  cursor: pointer;
+
+  &:hover {
+    background: whitesmoke;
+    transform: scale(0.95);
+  }
+
+  &:active {
+    transform: scale(0.95);
+  }
+}
+
+.hide {
+  display: none;
+}
+
+@media print {
+  .btnDiv {
+    display: none;
+  }
+}
+
+@media (max-width: 786px) {
+  .content {
+    flex-direction: column;
+  }
+  aside,
+  .main-content {
+    width: 100%;
+  }
+}
